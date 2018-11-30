@@ -28,11 +28,10 @@
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
   font-family: 'Source Serif Pro', serif;
-  font-weight: 400;
 }
 code {
   font-family: 'Source Code Pro', ;
