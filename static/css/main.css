@@ -44,6 +44,12 @@ table, table tr th, table tr td{
 	text-align: center
 }
 
+blockquote{
+	background: var(--light-grey);
+	padding: 0 0 0 1rem;
+	border-left: 5px solid var(--grey);
+}
+
 .wrapper {
 	overflow: hidden;
 	position: relative;
