@@ -4,6 +4,5 @@
 .Ruserdata
 exampleSite/.DS_Store
 .DS_Store
-static/css/test-rmd.html
+static/css/*.html
 static/css/pie-1.png
-static/css/test-about.html
