@@ -320,7 +320,7 @@ blockquote{
 	flex-direction: column;
 	align-items: stretch;
 	position: fixed;
-	top: 40px;
+	top: 50px;
 	left: 40px;
 	max-width: 22em;
 	min-width: 14em;
@@ -328,7 +328,8 @@ blockquote{
 	z-index: 10000;
 	box-sizing: border-box;
 	background-color: #fff;
-	line-height: 1.3;
+	font-size: calc(12px + 0.1vw);
+	line-height: 1.5;
 	border: 1px solid var(--mid-grey);
 	-webkit-font-smoothing: subpixel-antialiased;
 			font-smoothing: subpixel-antialiased;
@@ -472,6 +473,10 @@ blockquote{
 
 	.footer-links {
 		font-size: inherit;
+	}
+
+	#TOC{
+		display: none;
 	}
 }
 
