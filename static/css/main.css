@@ -334,6 +334,7 @@ blockquote{
 	}
 
 	.archive-item-date {
+		color: var(--grey);
 		font-size: 18px;
 		text-align: right;
 		float: right;
