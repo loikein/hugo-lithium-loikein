@@ -34,7 +34,7 @@ h2:not(.archive-title){
 .tags {
 	display: inline-block;
 	color: var(--grey);
-	margin-left: auto;
+	margin-left: 1em;
 }
 
 .tags a{
