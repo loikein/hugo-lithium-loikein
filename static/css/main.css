@@ -255,7 +255,7 @@ blockquote{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	color: #ccc;
+	color: var(--grey);
 	font-size: 14px;
 }
 
@@ -263,7 +263,6 @@ blockquote{
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	color: var(--grey);
 	margin: 0 1em 0 1em;
 }
 
@@ -281,7 +280,7 @@ blockquote{
 .footer-links li::before {
 	content: '/';
 	position: relative;
-	left: -2px;
+	left: -1em;
 }
 
 .footer-links li:first-child::before {
