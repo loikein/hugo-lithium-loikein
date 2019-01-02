@@ -166,8 +166,8 @@ blockquote{
 }
 
 .article-content .MJXc-display {
-	margin: inherit;
-	padding: inherit;
+	margin-top: 0.3rem;
+	margin-bottom: -1.3rem;
 }
 
 .article-content a {
