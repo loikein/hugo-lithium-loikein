@@ -320,6 +320,8 @@ blockquote{
 	flex-direction: column;
 	align-items: stretch;
 	position: fixed;
+	top: 120px;
+	left: 40px;
 	max-width: 22em;
 	min-width: 14em;
 	max-height: calc(100vh - 100px);
@@ -350,7 +352,7 @@ blockquote{
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	text-overflow: ellipsis;
-	overflow-x: hidden;
+	overflow: hidden;
 	white-space: nowrap;
 }
 
@@ -406,7 +408,7 @@ blockquote{
 /* end toc*/
 
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 	.header {
 		padding: 25px 0;
 	}
@@ -470,10 +472,6 @@ blockquote{
 
 	.footer-links {
 		font-size: inherit;
-	}
-
-	#TOC {
-		display: none;
 	}
 }
 
