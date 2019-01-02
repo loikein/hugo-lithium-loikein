@@ -263,13 +263,13 @@ blockquote{
 	margin: 0;
 	padding: 0;
 	display: inline-block;
+	color: var(--grey);
+	margin: 0 15px;
 }
 
 .footer-links a {
-	color: #888;
 	text-decoration: none;
 	transition: color 150ms ease;
-	margin: 0 15px;
 }
 
 .footer-links a:hover,
@@ -286,6 +286,7 @@ blockquote{
 .footer-links li:first-child::before {
 	display: none;
 }
+
 .footer-links-kudos img {
 	position: relative;
 	top: 6px;
