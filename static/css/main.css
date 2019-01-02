@@ -320,8 +320,6 @@ blockquote{
 	flex-direction: column;
 	align-items: stretch;
 	position: fixed;
-	top: 120px;
-	left: 40px;
 	max-width: 22em;
 	min-width: 14em;
 	max-height: calc(100vh - 100px);
@@ -352,7 +350,7 @@ blockquote{
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	text-overflow: ellipsis;
-	overflow: hidden;
+	overflow-x: hidden;
 	white-space: nowrap;
 }
 
