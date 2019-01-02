@@ -306,13 +306,13 @@ blockquote{
 /* start toc */
 
 #TOC {
-  all: initial;
+	all: initial;
 }
 
 #TOC *,
 #TOC *::before,
 #TOC *::after {
-  all: unset;
+	all: unset;
 }
 
 #TOC{
@@ -320,7 +320,7 @@ blockquote{
 	flex-direction: column;
 	align-items: stretch;
 	position: fixed;
-	top: 60px;
+	top: 70px;
 	left: 40px;
 	max-width: 22em;
 	min-width: 14em;
@@ -336,6 +336,12 @@ blockquote{
 	will-change: transform, max-width;
 	transition: max-width 0.3s;
 	contain: content;
+}
+
+#TOC .handle {
+	-webkit-user-select: none;
+		user-select: none;
+	border-bottom: 1px solid var(--blue);
 }
 
 #TOC ul,
