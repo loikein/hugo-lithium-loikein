@@ -264,7 +264,7 @@ blockquote{
 	padding: 0;
 	display: inline-block;
 	color: var(--grey);
-	margin: 0 15px;
+	margin: 0 1em 0 1em;
 }
 
 .footer-links a {
