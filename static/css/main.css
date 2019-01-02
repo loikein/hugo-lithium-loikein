@@ -320,6 +320,8 @@ blockquote{
 	flex-direction: column;
 	align-items: stretch;
 	position: fixed;
+	top: 120px;
+	left: 40px;
 	max-width: 22em;
 	min-width: 14em;
 	max-height: calc(100vh - 100px);
@@ -329,7 +331,7 @@ blockquote{
 	line-height: 1.3;
 	border: 1px solid var(--mid-grey);
 	-webkit-font-smoothing: subpixel-antialiased;
-	font-smoothing: subpixel-antialiased;
+			font-smoothing: subpixel-antialiased;
 	overflow: hidden;
 	will-change: transform, max-width;
 	transition: max-width 0.3s;
@@ -350,7 +352,7 @@ blockquote{
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	text-overflow: ellipsis;
-	overflow-x: hidden;
+	overflow: hidden;
 	white-space: nowrap;
 }
 
@@ -470,6 +472,10 @@ blockquote{
 
 	.footer-links {
 		font-size: inherit;
+	}
+
+	#TOC {
+		display: none;
 	}
 }
 
