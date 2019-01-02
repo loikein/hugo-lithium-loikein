@@ -338,12 +338,6 @@ blockquote{
 	contain: content;
 }
 
-#TOC .handle {
-	-webkit-user-select: none;
-		user-select: none;
-	border-bottom: 1px solid var(--blue);
-}
-
 #TOC ul,
 #TOC li {
 	list-style: none;
@@ -449,7 +443,9 @@ blockquote{
 	.footer-links {
 		font-size: 14px;
 	}
+}
 
+@media (max-width: 1200px) {
 	#TOC{
 		display: none;
 	}
