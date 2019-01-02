@@ -31,12 +31,12 @@ h2:not(.archive-title){
 	border-bottom: 1px solid var(--mid-grey);
 }
 
-.tags p{
+.tags {
 	display: inline-block;
 	color: var(--grey);
 }
 
-.tags p a{
+.tags a{
 	text-decoration: none;
 	color: inherit;
 }
