@@ -335,9 +335,8 @@ blockquote{
 			font-smoothing: subpixel-antialiased;
 	will-change: transform, max-width;
 	transition: max-width 0.3s;
-	contain: content;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #TOC ul,
