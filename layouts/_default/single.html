@@ -14,7 +14,7 @@
     {{ end }}
     
     {{ if eq .Section "post" }}
-    <p class="terms">
+    <p class="tags">
     {{ range $i := (slice "tags") }}
     {{ with ($.Param $i) }}
     {{ $i | title }}:
