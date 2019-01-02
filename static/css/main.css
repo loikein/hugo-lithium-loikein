@@ -270,6 +270,7 @@ blockquote{
 .footer-links a {
 	text-decoration: none;
 	transition: color 150ms ease;
+	color: var(--grey);
 }
 
 .footer-links a:hover,
