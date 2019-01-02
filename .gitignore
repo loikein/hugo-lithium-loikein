@@ -8,3 +8,4 @@ static/css/*.html
 static/css/pie-1.png
 static/css/test-math.html
 static/css/test-math.html
+layouts/partials/yihui-disqus.html
