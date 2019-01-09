@@ -368,18 +368,8 @@ strong {
 	}
 }
 
-@media (max-width: 1200px) {
-	#TOC{
-		display: none;
-	}
-}
-
 @media print {
 	.header, .footer {
 		display: none;
-	}
-
-	.article-content a {
-		box-shadow: none;
 	}
 }
