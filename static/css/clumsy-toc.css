@@ -133,6 +133,7 @@
 @media (max-width: 1200px) {
 	#TOC{
 		left: unset;
+		bottom: 1vh;
 		right: 5vh;
 	}
 }
