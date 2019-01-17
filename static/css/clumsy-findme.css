@@ -1,0 +1,13 @@
+.findme a{
+	font-size: 2.5em;
+	color: var(--dark-theme);
+	text-decoration: none;
+}
+
+.findme a>i {
+	margin: 0/*up*/ 0.3em/*right*/ 0.2em/*down*/ 0.3em /*left*/;
+}
+
+.findme a:hover {
+	color: var(--theme);
+}
