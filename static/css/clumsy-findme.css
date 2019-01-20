@@ -2,7 +2,8 @@
 	margin: 1em 0 1em 0;
 }
 
-.findme *{
+.findme *,
+.findme *:hover{
 	border-bottom: none !important;
 	box-shadow: none !important;
 	text-decoration: none !important;
