@@ -1,8 +1,6 @@
-.findme{
-	margin: auto;
-}
-
 .findme *{
+	border-bottom: none;
+	box-shadow: none;
 	text-decoration: none;
 }
 
