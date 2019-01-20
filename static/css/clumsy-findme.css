@@ -1,7 +1,14 @@
-.findme a{
-	font-size: 2.5em;
-	color: var(--dark-theme);
+.findme{
+	margin: auto;
+}
+
+.findme *{
 	text-decoration: none;
+}
+
+.findme a{
+	font-size: 2em;
+	color: var(--dark-theme);
 }
 
 .findme a>i {
