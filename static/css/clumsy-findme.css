@@ -1,7 +1,7 @@
 .findme *{
-	border-bottom: none;
-	box-shadow: none;
-	text-decoration: none;
+	border-bottom: none !important;
+	box-shadow: none !important;
+	text-decoration: none !important;
 }
 
 .findme a{
