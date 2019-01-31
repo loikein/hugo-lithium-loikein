@@ -1,0 +1,5 @@
+{{ if (in (string .Content) "last-update") }}
+<script src="{{ "/js/jquery-3.3.1.min.js" | relURL }}"></script>
+<script src="{{ "/js/jquery.timeago.min.js" | relURL }}"></script>
+<script src="{{ "/js/clumsy-update.js" | relURL }}"></script>
+{{ end }}

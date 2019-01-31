@@ -8,3 +8,4 @@ static/css/*.html
 static/css/pie-1.png
 layouts/partials/yihui-disqus.html
 static/css/copy-main.css
+layouts/partials/copy-yihui-disqus.html

@@ -1,0 +1,3 @@
+{{ if (in (string .Content) "last-update") }}
+<link rel="stylesheet" href="{{ "css/clumsy-update.css" | relURL }}" media="all">
+{{ end }}
