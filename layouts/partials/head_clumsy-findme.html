@@ -1,3 +1,3 @@
-{{ if (in (string .Content) "Hello") }}
+{{ if and (in (string .Content) "Hello") (in (string .Content) "China")}}
 <link rel="stylesheet" href="{{ "css/clumsy-findme.css" | relURL }}" media="all">
 {{ end }}
