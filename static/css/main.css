@@ -220,7 +220,11 @@ strong {
 }
 
 .article-content p {
-	margin: 15px 0 25px;
+	margin: 15px 0 15px;
+}
+
+.article-content .caption {
+	text-align: center;
 }
 
 .article-content code {
