@@ -182,6 +182,7 @@ strong {
 	color: var(--black);
 }
 
+.article-content p img,
 .figure img{
 	max-width: 100%;
 	margin: auto;

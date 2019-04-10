@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ .Hugo.Generator }}
-{{ if eq .URL "/" }}
+{{ hugo.Generator }}
+{{ if eq .Permalink "/" }}
 <title>{{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Site.Title }}">
 <meta property="og:type" content="website">
@@ -9,7 +9,7 @@
 <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
-{{ if eq .URL "/" }}
+{{ if eq .Permalink "/" }}
 <meta property="description" content="{{ .Site.Params.description }}">
 {{ else }}
   {{ if .Description }}
@@ -21,7 +21,7 @@
 {{ end }}
 <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relURL }}" />
 {{ if .RSSLink }}
-<link href="{{ .RSSLink | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+<link href="{{ .Site.RSSLink | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" media="all">
@@ -29,7 +29,6 @@
 <link rel="stylesheet" href="{{ "/css/clumsy-toc.css" | relURL }}" media="all">
 {{ partial "head_clumsy-update" . }}
 {{ partial "head_clumsy-findme" . }}
-
 {{ range .Site.Params.customCSS }}
 <link rel="stylesheet" href="{{ . | relURL }}">
 {{ end }}
