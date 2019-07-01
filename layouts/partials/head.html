@@ -23,6 +23,7 @@
 {{ if .RSSLink }}
 <link href="{{ .Site.RSSLink | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
+{{ partial "google_analytics" . }}
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" media="all">
 <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}" media="all">
