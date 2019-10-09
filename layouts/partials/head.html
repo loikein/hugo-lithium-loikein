@@ -22,8 +22,8 @@
 {{ end }}
 <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relURL }}" />
 {{ with .OutputFormats.Get "RSS" }}
-    <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
-    <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
 {{ end }}
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" media="all">
