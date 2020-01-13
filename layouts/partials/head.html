@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ hugo.Generator }}
-{{ if eq .Permalink "/" }}
+{{ if eq .RelPermalink "/" }}
 <title>{{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Site.Title }}">
 <meta property="og:type" content="website">
@@ -10,7 +10,7 @@
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
 {{ partial "google_analytics" . }}
-{{ if eq .Permalink "/" }}
+{{ if eq .RelPermalink "/" }}
 <meta property="description" content="{{ .Site.Params.description }}">
 {{ else }}
   {{ if .Description }}
