@@ -277,7 +277,8 @@ strong {
 
 .article-content a:hover,
 .article-content a:focus {
-	background: var(--theme);
+	/*background: var(--theme);*/
+	color: var(--theme-dark);
 }
 
 .article-content hr {
