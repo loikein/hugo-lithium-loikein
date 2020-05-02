@@ -8,7 +8,9 @@ body {
 	--grey: #BBB;
 	--black: #222;
 	--theme: #F9BCBD;
-	--dark-theme: #ABD8F7;
+	--theme-dark: #8B4C4E;
+	--theme-alt: #ABD8F7;
+	--theme-alt-dark: #093C5C;
 }
 
 body {
@@ -133,9 +135,16 @@ strong {
 	margin-left: 0;
 }
 
-.nav-links a, .nav-links a:hover{
+.nav-links a {
 	text-decoration: none;
+}
+
+.nav-links a {
 	color: var(--black);
+}
+
+.nav-links a:hover {
+	color: var(--theme-dark);
 }
 
 /* archive */
@@ -268,7 +277,7 @@ strong {
 
 .article-content a:hover,
 .article-content a:focus {
-	background: var(--theme);
+	color: var(--theme-dark);
 }
 
 .article-content hr {
