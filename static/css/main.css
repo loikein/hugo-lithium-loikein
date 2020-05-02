@@ -79,8 +79,17 @@ strong {
 .header {
 	padding: 25px 0;
 	position: relative;
-	background: var(--light-grey);
-	border-bottom: 1px solid var(--light-grey);
+	border-bottom: 1px solid var(--mid-grey);
+}
+
+.header:before {
+	background: rgb(0,121,218);
+	background: linear-gradient(90deg, rgba(0,121,218,1) 0%, rgba(15,83,137,1) 28%, rgba(30,45,57,1) 41%, rgba(34,34,34,1) 50%, rgba(61,47,47,1) 60%, rgba(150,89,89,1) 76%, rgba(228,125,125,1) 100%);
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	top: -5px;
 }
 
 .nav {
