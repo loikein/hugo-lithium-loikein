@@ -1,4 +1,5 @@
 html {
+	--white: #FFF;
 	--light-grey: rgba(229, 229, 229, 0.5); /* light-grey*/
 	--dark-grey: #BBB;
 	--black: #222;
@@ -9,6 +10,7 @@ html {
 }
 
 html,body {
+	background: var(--white);
 	height: 100%;
 }
 
@@ -395,5 +397,18 @@ strong {
 @media print {
 	header, footer {
 		display: none;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--white: #222;
+		--light-grey: rgba(0, 0, 0, 0.5); /* very-black*/
+		--dark-grey: #4D4D4D;
+		--black: #FFF;
+		--theme: #EC797B; /* pink */
+		--theme-dark: #F9BCBD; /* light pink */
+		--theme-alt: #57A5DB; /* blue */
+		--theme-alt-dark: #ABD8F7; /* light blue */
 	}
 }
