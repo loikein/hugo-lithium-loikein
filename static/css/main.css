@@ -382,7 +382,6 @@ strong {
 	.content {
 		font-size: 16px;
 		text-align: left;
-		overflow-x: auto;
 	}
 
 	.article-content {
