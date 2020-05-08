@@ -271,8 +271,8 @@ strong {
 
 .article-content a:hover,
 .article-content a:focus {
-	color: var(--theme-alt);
-	box-shadow: inset 0 -3px 0 var(--theme-alt-dark);
+	color: var(--theme-alt-dark);
+	box-shadow: inset 0 -3px 0 var(--theme-alt);
 }
 
 .article-content hr {
