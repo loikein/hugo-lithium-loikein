@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 html {
 	--white: #FFF;
 	--light-grey: rgba(229, 229, 229, 0.5); /* light-grey*/
@@ -19,6 +26,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-moz-font-feature-settings: "liga" on;
+}
+
+main {
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -51,7 +63,9 @@ a {
 table {
 	margin: auto;
 	min-width: 80%;
+	-webkit-margin-before: 1em;
 	margin-block-start: 1em;
+	-webkit-margin-after: 1em;
 	margin-block-end: 1em;
 }
 
@@ -87,7 +101,8 @@ strong {
 }
 
 .header:before {
-	background: rgb(0,121,218);
+	background: rgb(249, 188, 189);
+	background: -o-linear-gradient(290deg, rgb(249, 188, 189) 0%, rgb(249, 188, 189) 50%, rgb(171, 216, 247) 50%, rgb(171, 216, 247) 100%);
 	background: linear-gradient(160deg, rgb(249, 188, 189) 0%, rgb(249, 188, 189) 50%, rgb(171, 216, 247) 50%, rgb(171, 216, 247) 100%);
 	content: '';
 	position: absolute;
@@ -106,11 +121,17 @@ strong {
 .nav-logo {
 	float: left;
 	margin-top: -13px;
+	-webkit-transition: -webkit-transform 150ms ease-out;
+	transition: -webkit-transform 150ms ease-out;
+	-o-transition: transform 150ms ease-out;
 	transition: transform 150ms ease-out;
+	transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
 }
 
 .nav-logo:hover,
 .nav-logo:focus {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 }
 
@@ -192,6 +213,7 @@ strong {
 
 .archive-item-link:hover,
 .archive-item-link:focus {
+	-webkit-box-shadow: inset 0 -4px var(--dark-grey);
 	box-shadow: inset 0 -4px var(--dark-grey);
 }
 
@@ -272,6 +294,7 @@ strong {
 .article-content a {
 	text-decoration: none;
 	color: var(--theme-dark);
+	-webkit-box-shadow: inset 0 -3px 0 var(--theme);
 	box-shadow: inset 0 -3px 0 var(--theme);
 	background: transparent;
 }
@@ -279,6 +302,7 @@ strong {
 .article-content a:hover,
 .article-content a:focus {
 	color: var(--theme-alt-dark);
+	-webkit-box-shadow: inset 0 -3px 0 var(--theme-alt);
 	box-shadow: inset 0 -3px 0 var(--theme-alt);
 }
 
@@ -324,6 +348,8 @@ strong {
 
 .footer-links a {
 	text-decoration: none;
+	-webkit-transition: color 150ms ease;
+	-o-transition: color 150ms ease;
 	transition: color 150ms ease;
 	color: var(--dark-grey);
 }
