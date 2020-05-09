@@ -6,7 +6,7 @@ The easiest way to get started is to create a new (empty) RStudio project, then
 
 ```r
 devtools::install_github('rstudio/blogdown')  # install blogdown
-blogdown::new_site(theme = 'yihui/hugo-lithium')
+blogdown::new_site(theme = 'loikein/hugo-lithium')
 ```
 
 Then you should be able to see an example website launched in the RStudio Viewer.
@@ -23,7 +23,27 @@ For the full documentation, please see this section in the **blogdown** book: ht
 - MathJax
 - highlight.js
 
-## Changes
+## Changes by loikein
+
+- [ ] Better accessibility
+    - [x] Every link is `focus`-able
+    - [ ] Skip to main button
+    - [ ] Accesskey support
+    - [ ] Accessibility statement
+- [x] Better table styles
+- [x] Floating table of content
+- [x] Dark mode
+- [x] Home page template
+- [x] Add back Google Analytics
+- [ ] Better font support for multiple languages
+- [ ] Fix link bugs introduced by Hugo 0.55
+    - [x] `.RelPermalink`
+    - [ ] RSS link
+- [ ] Search
+- [ ] `apple-touch-icon`
+- [ ] 404 page
+
+## Changes by Yihui
 
 The main changes I made to the original hugo-lithium-theme are:
 
