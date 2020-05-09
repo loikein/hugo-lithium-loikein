@@ -33,7 +33,7 @@ For the full documentation, please see this section in the **blogdown** book: ht
 - [x] Better table styles
 - [x] Floating table of content
 - [x] Dark mode
-- [x] Home page template
+- [x] Home page template (`/layouts/index.html`)
 - [x] Add back Google Analytics
 - [ ] Better font support for multiple languages
 - [ ] Fix link bugs introduced by Hugo 0.55
