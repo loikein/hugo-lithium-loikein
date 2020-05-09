@@ -10,6 +10,9 @@
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
 {{ partial "google_analytics" . }}
+{{ with .Site.Params.favicon }}
+  <link rel='icon' href='{{ . | absURL }}' type='image/x-icon'/>
+{{ end }}
 {{ if eq .RelPermalink "/" }}
 <meta property="description" content="{{ .Site.Params.description }}">
 {{ else }}
@@ -20,10 +23,8 @@
 {{ if .Keywords }}
 <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
 {{ end }}
-<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relURL }}" />
 {{ with .OutputFormats.Get "RSS" }}
-<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
-<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ site.Title }}">
+<link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }}
 {{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "/css/normalize.css" | relURL }}" media="all">
