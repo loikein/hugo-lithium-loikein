@@ -102,8 +102,8 @@ strong {
 
 .header::before {
 	background: var(--theme);
-	background: -o-linear-gradient(290deg, var(--theme) 0%, rvar(--theme) 50%, var(--theme-alt) 50%, var(--theme-alt) 100%);
-	background: linear-gradient(160deg, var(--theme) 0%, var(--theme) 50%, var(--theme-alt) 50%, var(--theme-alt) 100%);
+	background: -o-repeating-linear-gradient(290deg, var(--theme) 20px, var(--theme) 40px, var(--theme-alt) 40px, var(--theme-alt) 60px);
+	background: repeating-linear-gradient(160deg, var(--theme) 20px, var(--theme) 40px, var(--theme-alt) 40px, var(--theme-alt) 60px);
 	content: '';
 	position: absolute;
 	width: 100%;
