@@ -275,11 +275,8 @@ strong {
 
 .article-content pre {
 	background-color: var(--light-grey);
-	font-size: 16px;
+	line-height: 1.5;
 }
-
-/* fix hljs line height */
-.article-content pre .hljs{ line-height: 1.5; }
 
 .article-content kbd {
 	padding-left: 0.1em;
