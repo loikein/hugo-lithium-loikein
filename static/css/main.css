@@ -308,8 +308,19 @@ header.header::before {
 	border: 2px outset var(--light-grey);
 }
 
-/* fix mjx margin */
-.article-content mjx-container[jax="CHTML"][display="true"]{ margin: 0.5em 0; }
+/* mjx margin & scroll quick fix, introduce bug in Safari */
+.article-content mjx-container[jax="CHTML"][display="true"]{
+	margin: 0.5em 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+/* experimenting */
+/* .article-content mjx-assistive-mml {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0 !important;
+} */
 
 /* links */
 
