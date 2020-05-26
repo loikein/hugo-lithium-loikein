@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <main class="content" role="main">
   {{ if .Content }}
   <article class="article">
@@ -28,4 +28,4 @@
     {{ end }}
   </div>
 </main>
-{{ partial "footer.html" . }}
+{{ end }}

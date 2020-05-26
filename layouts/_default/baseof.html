@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+<header class="header">
+{{ partial "header.html" . }}
+</header>
+{{ block "main" . }}
+<!-- The part of the page that begins to differ between templates -->
+{{ end }}
+{{ partial "footer" . }}
+</body>
+</html>

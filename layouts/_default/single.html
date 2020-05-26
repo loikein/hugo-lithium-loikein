@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <main class="content" role="main">
   <article class="article">
     {{ if eq .Section "post" }}
@@ -27,4 +27,4 @@
   </article>
   {{ partial "disqus.html" .}}
 </main>
-{{ partial "footer.html" . }}
+{{ end }}

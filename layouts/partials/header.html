@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-  <head>
-    {{ partial "head.html" . }}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        {{ partial "nav.html" . }}
-      </header>
+<nav class="nav">
+<a href="{{ "/" | relURL }}" class="nav-logo">
+  <img src="{{ print "/" .Site.Params.logo.url | relURL }}"
+       alt="{{ .Site.Params.logo.alt }}">
+</a>
+<ul class="nav-links">
+  {{ range .Site.Menus.main }}
+  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+  {{ end }}
+</ul>
+</nav>
