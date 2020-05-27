@@ -16,6 +16,9 @@
 <footer class="footer">
 {{ partial "footer" . }}
 </footer>
+{{ range .Site.Params.customJS }}
+<script async src="{{ . | relURL }}"></script>
+{{ end }}
 {{ partial "footer_clumsy-update" . }}
 {{ partial "footer_highlightjs" . }}
 {{ partial "footer_mathjax" . }}
