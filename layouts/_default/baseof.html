@@ -4,6 +4,9 @@
 {{ partial "head.html" . }}
 </head>
 <body>
+<section class="a11y-links">
+<button class="a11y-links__link" tabindex="0" onclick="jumpAfterTOC()">Skip to main content</button>
+</section>
 <header class="header">
 {{ partial "header.html" . }}
 </header>
@@ -16,6 +19,6 @@
 {{ partial "footer_clumsy-update" . }}
 {{ partial "footer_highlightjs" . }}
 {{ partial "footer_mathjax" . }}
-{{ template "_internal/google_analytics.html" . }}
+{{ partial "google_analytics" . }}
 </body>
 </html>
