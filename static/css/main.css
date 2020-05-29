@@ -30,9 +30,9 @@ body {
 }
 
 :focus:not([tabindex="-1"]) {
-  outline: 3px solid var(--theme-dark);
-  outline-offset: 3px;
-  border: 0;
+	outline: 3px solid var(--theme-dark);
+	outline-offset: 3px;
+	border: 0;
 }
 
 
@@ -120,7 +120,7 @@ blockquote.question {
 }
 
 strong {
-	font-weight: inherit;
+	font-weight: 700;
 	font-style: inherit;
 	text-decoration:underline;
 }
