@@ -19,8 +19,7 @@
 	align-items: stretch;*/
 	position: fixed;
 	top: 120px;
-	bottom: 1em;
-	left: 2em;
+	left:2em;
 	max-width: 22em;
 	min-width: 14em;
 	max-height: 85vh;
@@ -136,7 +135,10 @@
 @media (max-width: 1200px) {
 	#TOC{
 		left: unset;
+		top:unset;
+		bottom:1em;
 		right: 1em;
+		max-height: 50vh;
 	}
 }
 
