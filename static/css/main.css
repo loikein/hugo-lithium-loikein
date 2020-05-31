@@ -319,9 +319,11 @@ header.header::before {
 }
 
 .article-content kbd {
-	padding-left: 0.1em;
-	padding-right: 0.1em;
-	border: 2px outset var(--light-grey);
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	border: 2px outset var(--dark-grey);
+	border-radius: 0.5em;
+	cursor: pointer;
 }
 
 /* mjx margin & scroll quick fix, introduce bug in Safari */
