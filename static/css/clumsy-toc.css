@@ -18,8 +18,9 @@
 	flex-direction: column;
 	align-items: stretch;*/
 	position: fixed;
-	bottom: 5vh;
-	left: 5vh;
+	top: 120px;
+	bottom: 1em;
+	left: 2em;
 	max-width: 22em;
 	min-width: 14em;
 	max-height: 85vh;
@@ -61,14 +62,8 @@
 /* active */
 
 #TOC a:hover,
-#TOC a:active,
 #TOC a:focus {
 	border-left-color: var(--theme);
-	color: var(--theme-dark);
-}
-
-#TOC li.active > a {
-	border-left-color: var(--theme-dark);
 	color: var(--theme-dark);
 }
 
@@ -141,9 +136,7 @@
 @media (max-width: 1200px) {
 	#TOC{
 		left: unset;
-		bottom: 1vh;
-		right: 1vh;
-		max-height: 50vh;
+		right: 1em;
 	}
 }
 
