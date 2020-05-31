@@ -27,21 +27,24 @@ For the full documentation, please see this section in the **blogdown** book: ht
 
 - [ ] Better accessibility
     - [x] Every link is `focus`-able
-    - [ ] Skip to main button
-    - [ ] Accesskey support
+    - [x] Skip to main button
     - [ ] Accessibility statement
-- [x] Better table styles
-- [x] Floating table of content
-- [x] Dark mode
-- [x] Home page template (`/layouts/index.html`)
-- [x] Add back Google Analytics
-- [ ] Better font support for multiple languages
+    - [x] Search (powered by [Duckduckgo `site` syntax](https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/))
+    - [ ] 404 page
+- [ ] Better looking
+    - [x] Dark mode
+    - [x] Floating table of content
+    - [x] Better table styles
+    - [x] Home page template (`/layouts/index.html`)
+    - [ ] Google fonts for multiple languages
+    - [ ] Responsive navigation links
+    - [ ] `apple-touch-icon`
+- [ ] Faster
+    - [ ] Migrate to KaTeX
 - [ ] Fix link bugs introduced by Hugo 0.55
     - [x] `.RelPermalink`
     - [ ] RSS link
-- [ ] Search
-- [ ] `apple-touch-icon`
-- [ ] 404 page
+
 
 ## Changes by Yihui
 
