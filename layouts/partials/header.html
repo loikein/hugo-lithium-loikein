@@ -1,11 +1,13 @@
 <nav class="nav">
 <a href="{{ "/" | relURL }}" class="nav-logo">
-  <img src="{{ print "/" .Site.Params.logo.url | relURL }}"
-       alt="{{ .Site.Params.logo.alt }}">
+<img src="{{ print "/" .Site.Params.logo.url | relURL }}" alt="{{ .Site.Params.logo.alt }}">
 </a>
 <ul class="nav-links">
-  {{ range .Site.Menus.main }}
-  <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-  {{ end }}
+{{ $currentPage := . }}
+{{ range .Site.Menus.main }}
+  <li>
+  <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+  </li>
+{{ end }}
 </ul>
 </nav>

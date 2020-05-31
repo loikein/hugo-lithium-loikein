@@ -202,10 +202,15 @@ header.header::before {
 	padding-bottom: 19px;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
+.nav-links a.active {
 	color: var(--theme-dark);
 	border-bottom: 5px solid var(--theme);
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+	color: var(--theme-alt-dark);
+	border-bottom: 5px solid var(--theme-alt);
 }
 
 /* archive */
