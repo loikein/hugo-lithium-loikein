@@ -29,7 +29,7 @@
 	position: fixed;
 	top: 150px;
 	left:2em;
-	max-width: 22em;
+	max-width: 25em;
 	padding-top: 0.3em;
 	margin-bottom: 1em;
 	z-index: 10000;
@@ -141,7 +141,19 @@
 	font-weight: normal;
 }
 
+@media (max-width: 1250px) {
+	#TOC {
+		width: 20vw;
+	}
+}
+
 @media (max-width: 1200px) {
+	#TOC {
+		width: 15vw;
+	}
+}
+
+@media (max-width: 1100px) {
 	#TOC::before {
 		display:none;
 	}
