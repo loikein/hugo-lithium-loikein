@@ -1,0 +1,44 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "A Hugo website"
+theme: "hugo-lithium-loikein"
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.md$", "\\.Rmarkdown$", "\\.ipynb$", "_files$", "_cache$"]
+
+permalinks:
+  post: "/:year/:month/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: /
+    - name: About
+      url: /about/
+    - name: Tags
+      url: /tags/
+    - name: RSS
+      url: /index.xml
+    - name: GitHub
+      url: "https://github.com/rstudio/blogdown"
+    - name: Twitter
+      url: "https://twitter.com/rstudio"
+
+params:
+  description: "A website built through Hugo and blogdown."
+
+  customCSS: ["/css/clumsy-toc.css", "/css/jump-after-toc.css"]
+  customJS: ["js/jump-after-toc.js"]
+
+  highlightjsVersion: 10.0.0
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang: ["r", "yaml"]
+  highlightjsTheme: "github"
+
+  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
+  MathJaxVersion: 2.7.5
+
+  favicon: favicon.ico
+  logo:
+    url: logo.png
+    alt: Logo
