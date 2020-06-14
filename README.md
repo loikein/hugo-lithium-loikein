@@ -41,9 +41,9 @@ For the full documentation, please see this section in the **blogdown** book: ht
     - [ ] `apple-touch-icon`
 - [x] Faster
     - [x] Migrate to KaTeX
-- [ ] Fix link bugs introduced by Hugo 0.55
+- [x] Fix link bugs introduced by Hugo 0.55
     - [x] `.RelPermalink`
-    - [ ] RSS link
+    - [x] RSS link
 
 
 ## Changes by Yihui
@@ -61,6 +61,7 @@ The main changes I made to the original hugo-lithium-theme are:
 1. Improved Hugo's built-in Disqus template, so that you can actually view the comments even when you are previewing the website locally.
 
 1. Replaced the variable `.Permalink` with `.RelPermalink`, and function `absURL` with `relURL` where necessary. It is a bad idea to use full absolute links (with the protocol and domain) in general. For example, `.Permalink` and `absURL` may generate URLs of the form `http://www.example.com/foo/bar.html`, but `/foo/bar.html` is more portable.
+
 
 ## License
 
