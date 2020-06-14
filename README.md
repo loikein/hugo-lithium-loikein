@@ -39,8 +39,8 @@ For the full documentation, please see this section in the **blogdown** book: ht
     - [ ] Google fonts for multiple languages
     - [ ] Responsive navigation links
     - [ ] `apple-touch-icon`
-- [ ] Faster
-    - [ ] Migrate to KaTeX
+- [x] Faster
+    - [x] Migrate to KaTeX
 - [ ] Fix link bugs introduced by Hugo 0.55
     - [x] `.RelPermalink`
     - [ ] RSS link

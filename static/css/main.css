@@ -314,7 +314,7 @@ header.header {
 	cursor: pointer;
 }
 
-/* math margin & scroll quick fix, introduce bug in Safari */
+/* math margin & scroll quick fix */
 .article-content .katex-display{
 	margin: 0.5em 0;
 	overflow-x: auto;
@@ -324,13 +324,6 @@ header.header {
 .article-content .katex {
 	font-size: 1.1em !important;
 }
-
-/* experimenting */
-/* .article-content .katex-display {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top: 0 !important;
-} */
 
 /* links */
 
