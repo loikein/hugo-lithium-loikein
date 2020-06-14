@@ -26,10 +26,11 @@
 {{ with .OutputFormats.Get "RSS" }}
 <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }}
-{{ partial "head_highlightjs" . }}
 <link rel="stylesheet" href="{{ "/css/normalize.css" | relURL }}" media="all">
 <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" media="all">
 <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}" media="all">
+{{ partial "head_highlightjs" . }}
+{{ partial "head_katex" . }}
 {{ partial "head_clumsy-update" . }}
 {{ range .Site.Params.customCSS }}
 <link rel="stylesheet" href="{{ . | relURL }}">

@@ -1,6 +1,7 @@
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <script src="{{ "/js/math-code.js" | relURL }}"></script>
-<script async defer src="{{ .Site.Params.MathJaxCDN | default "//cdn.jsdelivr.net/npm" }}/mathjax@{{ .Site.Params.MathJaxVersion | default "3" }}/es5/tex-mml-chtml.js"></script>
-<!-- <script async defer src="{{ .Site.Params.MathJaxCDN | default "//cdnjs.cloudflare.com/ajax/libs" }}/mathjax/{{ .Site.Params.MathJaxVersion | default "3.0.0" }}/es5/latest?tex-mml-chtml.js"></script> -->
-<!-- cannot access due to a bug in cdnjs: https://github.com/cdnjs/cdnjs/issues/13145 -->
+<script async defer src="{{ .Site.Params.KaTeXCDN | default "//cdn.jsdelivr.net/npm" }}/katex@{{ .Site.Params.KaTeXCDN | default "0.11.1" }}/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script async defer src="{{ .Site.Params.KaTeXCDN | default "//cdn.jsdelivr.net/npm" }}/katex@{{ .Site.Params.KaTeXCDN | default "0.11.1" }}/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);">
+</script>
 {{ end }}
