@@ -19,6 +19,7 @@
 {{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
 {{ end }}
+{{ partial "footer_katex" . }}
 {{ partial "footer_clumsy-update" . }}
 {{ partial "footer_highlightjs" . }}
 {{ partial "google_analytics" . }}
