@@ -2,9 +2,13 @@
 <nav id="article-nav">
     {{ if .PrevInSection }}
     <span class="article-nav-older">Older: <a href="{{ .PrevInSection.Permalink }}" class="article-nav-link-wrap">{{ .PrevInSection.Title }}</a></span>
+    {{ else }}
+    <span class="article-nav-placeholder"></span>
     {{ end }}
     {{ if .NextInSection }}
     <span class="article-nav-newer">Newer: <a href="{{ .NextInSection.Permalink }}" class="article-nav-link-wrap">{{ .NextInSection.Title }}</a></span>
+    {{ else }}
+    <span class="article-nav-placeholder"></span>
     {{ end }}
 </nav>
 {{ end }}
