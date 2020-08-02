@@ -24,6 +24,9 @@
     <div class="article-content">
       {{ .Content }}
     </div>
+    {{ if eq .Section "post" }}
+    {{ partial "prev_next.html" . }}
+    {{ end }}
   </article>
   {{ partial "disqus.html" .}}
 </main>
