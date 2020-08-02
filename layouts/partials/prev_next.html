@@ -1,10 +1,10 @@
 {{ if or .PrevInSection .NextInSection }}
 <nav id="article-nav">
     {{ if .PrevInSection }}
-    <span>Older: <a href="{{ .PrevInSection.Permalink }}" id="article-nav-older" class="article-nav-link-wrap">{{ .PrevInSection.Title }}</a></span>
+    <span class="article-nav-older">Older: <a href="{{ .PrevInSection.Permalink }}" class="article-nav-link-wrap">{{ .PrevInSection.Title }}</a></span>
     {{ end }}
     {{ if .NextInSection }}
-    <span>Newer: <a href="{{ .NextInSection.Permalink }}" id="article-nav-newer" class="article-nav-link-wrap">{{ .NextInSection.Title }}</a></span>
+    <span class="article-nav-newer">Newer: <a href="{{ .NextInSection.Permalink }}" class="article-nav-link-wrap">{{ .NextInSection.Title }}</a></span>
     {{ end }}
 </nav>
 {{ end }}
