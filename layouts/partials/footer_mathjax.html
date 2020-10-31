@@ -1,6 +1,0 @@
-{{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
-<script src="{{ "/js/math-code.js" | relURL }}"></script>
-<script async defer src="{{ .Site.Params.MathJaxCDN | default "//cdn.jsdelivr.net/npm" }}/mathjax@{{ .Site.Params.MathJaxVersion | default "3" }}/es5/tex-mml-chtml.js"></script>
-<!-- <script async defer src="{{ .Site.Params.MathJaxCDN | default "//cdnjs.cloudflare.com/ajax/libs" }}/mathjax/{{ .Site.Params.MathJaxVersion | default "3.0.0" }}/es5/latest?tex-mml-chtml.js"></script> -->
-<!-- cannot access due to a bug in cdnjs: https://github.com/cdnjs/cdnjs/issues/13145 -->
-{{ end }}
