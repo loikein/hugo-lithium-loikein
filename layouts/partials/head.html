@@ -9,7 +9,6 @@
 <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
 <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end }}
-{{ partial "google_analytics" . }}
 {{ with .Site.Params.favicon }}
   <link rel='icon' href='{{ . | absURL }}' type='image/x-icon'/>
 {{ end }}

@@ -2,7 +2,6 @@ baseurl: "/"
 languageCode: "en-us"
 title: "A Hugo website"
 theme: "hugo-lithium-loikein"
-googleAnalytics: ""
 disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.md$", "\\.Rmarkdown$", "\\.ipynb$", "_files$", "_cache$"]
 
